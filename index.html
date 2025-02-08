@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Formatter</h1>
+        <textarea id="input" placeholder="Enter your text here"></textarea>
+        
+        <div class="options">
+            <label>
+                <input type="checkbox" id="capitalize"> Capitalize First Letter of Each Word
+            </label>
+        </div>
+        
+        <div class="options">
+            <label>
+                <input type="checkbox" id="replaceCheckbox"> Replace/Remove Characters
+            </label>
+            <div class="replace-options" id="replaceOptions">
+                <input type="text" id="charsToReplace" placeholder="Characters to replace">
+                <input type="text" id="replacementChar" placeholder="Replacement character (leave empty to remove)">
+            </div>
+        </div>
+        
+        <button onclick="processText()">Process Text</button>
+        
+        <h2>Result:</h2>
+        <textarea id="output" readonly></textarea>
+        
+        <button id="copyButton">Copy</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
